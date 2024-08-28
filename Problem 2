@@ -1,0 +1,22 @@
+text=str(input())
+li=list(text)
+print(li)
+cnt=0
+for i in li:
+    if i=='a' or i=='e' or i=='o' or i=='u' or i=='i':
+        cnt=cnt+1
+print("Total Vowels :",cnt)
+uniq=[]
+for i in range(0,len(li)):
+    cnt=0
+    for j in range(0,len(li)):
+        if i!=j and li[i]!=' ' :
+            if li[i]==li[j]:
+                cnt=cnt+1
+    if cnt==0 :
+        if  li[i]=='a' or li[i]=='e' or li[i]=='i' or li[i]=='o' or li[i]=='u' :
+            uniq.append(li[i])
+
+        
+print(uniq)
+             
