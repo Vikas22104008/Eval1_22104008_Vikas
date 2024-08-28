@@ -1,0 +1,14 @@
+text=str(input())
+n=int(input())
+cnt=0
+newtext=[]
+for i in range(0,len(text)):
+    if text[i]=='.':
+       newtext.append(',')
+    else:
+        if text[i]==',':
+            newtext.append('.')
+        else:
+            newtext.append(text[i])   
+newstr="".join(newtext)
+print(newstr)
